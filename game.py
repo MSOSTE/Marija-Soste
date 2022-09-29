@@ -1,18 +1,28 @@
-def shoot()
 
+hp = 999
+def shoot(damage):
+    global hp
+    hp -= damage
+    print('You dealt damage of {damage}')
+    return hp
 
-def game_over()
-    print('Game over Marija')
+def game_over(name):
+    print('Game over ' + name)
 
-def fly_left()
+name = 'Marija'
+def fly_left():
     print('You moved left')
 
-def fly_right()
+def fly_right():
     print('You moved right')
 
-def fly_forward()
+def fly_forward():
     print('You moved forward')
 
 
 if __name__ =='__main__':
-    print(shoot4)
+    fly_left()
+    shoot(9)
+    fly_forward()
+    fly_right()
+    game_over('Marija')
