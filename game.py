@@ -25,4 +25,4 @@ if __name__ =='__main__':
     shoot(9)
     fly_forward()
     fly_right()
-    game_over('Marija')
+    game_over('Marija ')
